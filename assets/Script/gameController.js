@@ -31,6 +31,10 @@ cc.Class({
         
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, function(){  this.flipperLeft.rotation = -20;this.flipperRight.rotation = 20;}, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, function(){  this.flipperLeft.rotation = 20;this.flipperRight.rotation = -20;}, this);
+        
+        //TOUCH
+        this.node.on(cc.Node.EventType.TOUCH_START,function(){  this.flipperLeft.rotation = -20;this.flipperRight.rotation = 20;}, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, function(){  this.flipperLeft.rotation = 20;this.flipperRight.rotation = -20;}, this);
     },
     
     update:function()
