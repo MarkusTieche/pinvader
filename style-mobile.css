@@ -31,7 +31,6 @@ body {
   padding: 0;
   border: 0;
   margin: 0;
-    
 
   cursor: default;
   color: #888;
@@ -50,7 +49,7 @@ body {
   overflow: hidden;
   left: 0px;
   top: 0px;
-    background:black;
+
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-align: center;
